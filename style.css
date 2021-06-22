@@ -2,7 +2,14 @@ body {
     background:linear-gradient(#FFE000 0%, Red 100%)
 }
 
-#snapshot, #captured {
+#snapshot{
+    border-style: ridge;
+    border-color: orange;
+    height:250px;
+    width:250px;
+}
+
+#captured{
     border-style: ridge;
     border-color: orange;
     height:250px;
