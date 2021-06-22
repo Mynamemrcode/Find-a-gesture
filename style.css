@@ -5,4 +5,6 @@ body {
 #snapshot, #captured {
     border-style: ridge;
     border-color: orange;
+    height:250px;
+    width:250px;
 }
