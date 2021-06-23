@@ -1,8 +1,9 @@
 body {
-    background:linear-gradient(#FFE000 0%, Red 100%)
+    background:linear-gradient(225deg, #FFE000 0%, Red 100%)
 }
 
 #snapshot{
+    border-width:4.30px;
     border-style: ridge;
     border-color: orange;
     height:250px;
