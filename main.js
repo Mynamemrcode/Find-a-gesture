@@ -22,7 +22,7 @@ function Loaded() {
 console.log("Loaded")
 }
 
-function id() {
+function od() {
     imageh = document.getElementById("o");
     classifier.classify(imageh, gotResult)
 }
@@ -34,7 +34,38 @@ if (error) {
 }
 else { 
     console.log(result);
-    document.getElementById("pred1").innerHTML = result[0].label;
-    document.getElementById("pred2").innerHTML = result[1].label;
+    document.getElementById("gesture-name").innerHTML = result[0].label;
+    document.getElementById("gestur-name").innerHTML = result[1].label;
+}
+if (result[0].label == "Left") {
+    document.getElementById("gesture-emo").innerHTML = "&#128072;";
+}
+if (result[0].label == "Right") {
+    document.getElementById("gesture-emo").innerHTML = "&#128073;";
+}
+if (result[0].label == "Stop") {
+    document.getElementById("gesture-emo").innerHTML = "&#9995;";
+}
+if (result[0].label == "Ok/Good") {
+    document.getElementById("gesture-emo").innerHTML = "&#x1f44c;";
+}
+if (result[0].label == "Thumbs up/Like") {
+    document.getElementById("gesture-emo").innerHTML = "&#128077;";
+}
+
+if (result[1].label == "Left") {
+    document.getElementById("gesture-emo1").innerHTML = "&#128072;";
+}
+if (result[1].label == "Right") {
+    document.getElementById("gesture-emo1").innerHTML = "&#128073;";
+}
+if (result[1].label == "Stop") {
+    document.getElementById("gesture-emo1").innerHTML = "&#9995;";
+}
+if (result[1].label == "Ok/Good") {
+    document.getElementById("gesture-emo1").innerHTML = "&#x1f44c;";
+}
+if (result[1].label == "Thumbs up/Like") {
+    document.getElementById("gesture-emo1").innerHTML = "&#128077;";
 }
 }

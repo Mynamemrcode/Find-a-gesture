@@ -27,7 +27,7 @@
             </span>
           </h1>
           <hr>
-          <h3>Note:<h5>Stop gesture will only work with right hand</h5></h3>
+          <h3>Note:<h5>If camera is not mirrored use the opposite hand</h5></h3>
         <div class="col-md-4 col-sm-12 col-xs-12">
             <h3>Preview</h3>
   <div id="snapshot"></div>
@@ -38,14 +38,18 @@
         <div class="col-md-4 col-sm-12 col-xs-12">
             <h5>Point webcam at blank wall for best result</h5>
           <label>Gesture prediction</label>
-          <p class="gesture-name" id="gesture-name"></p>
+          <h5 class="gesture-name" id="gesture-name"></h5>
+          <h4 id="gesture-emo"></h4>
+          <label>Alternative prediction</label>
+          <h5 class="gesture-name" id="gestur-name"></h5>
+          <h4 id="gesture-emo1"></h4>
           </div>
   
         <div class="col-md-4 col-sm-12 col-xs-12">
             <h3>Confirmed Picture</h3>
   <div id="captured"></div>
           <br><br>
-          <button id="id" onclick="id()" class="btn btn-success">Identify</button>
+          <button id="id" onclick="od()" class="btn btn-success">Identify</button>
         </div>
       </center>
     </div>
